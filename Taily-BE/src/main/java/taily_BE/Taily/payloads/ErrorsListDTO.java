@@ -1,4 +1,4 @@
-package team5.BW_CMR.payloads;
+package taily_BE.Taily.payloads;
 
 import java.time.LocalDateTime;
 import java.util.List;

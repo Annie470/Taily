@@ -8,8 +8,9 @@ import org.springframework.security.authorization.AuthorizationDeniedException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import team5.BW_CMR.payloads.ErrorsDTO;
-import team5.BW_CMR.payloads.ErrorsListDTO;
+import taily_BE.Taily.payloads.ErrorsDTO;
+import taily_BE.Taily.payloads.ErrorsListDTO;
+
 
 import java.time.LocalDateTime;
 
