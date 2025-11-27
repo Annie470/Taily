@@ -1,0 +1,11 @@
+<svg width="256" height="256" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Corpo principale della clipboard -->
+  <path d="M8 3C8 2.44772 8.44772 2 9 2H10C10 2.55228 10.4477 3 11 3H13C13.5523 3 14 2.55228 14 2H15C15.5523 2 16 2.44772 16 3V4H8V3Z" fill="#9CA3AF"/>
+  <path d="M6 4C5.44772 4 5 4.44772 5 5V21C5 21.5523 5.44772 22 6 22H18C18.5523 22 19 21.5523 19 21V5C19 4.44772 18.5523 4 18 4H17V5C17 5.55228 16.5523 6 16 6H8C7.44772 6 7 5.55228 7 5V4H6Z" fill="#D1D5DB"/>
+  
+  <!-- Linee di analisi/dati -->
+  <line x1="8" y1="10" x2="16" y2="10" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="8" y1="13" x2="14" y2="13" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="8" y1="16" x2="15" y2="16" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="8" y1="19" x2="13" y2="19" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

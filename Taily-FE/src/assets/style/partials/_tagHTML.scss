@@ -1,0 +1,383 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: $font-primary;
+}
+.bg-orange {
+    background-color: $color-orange;
+}
+.login-dog {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+   @media (max-width: 489px) {
+        width: 90%; 
+    }
+    @media (min-width: 490px) and (max-width: 767px) {
+        width: 46%;      
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 42%; 
+    }
+    @media (min-width: 992px) {
+        width: 45%;
+        right: 0;
+        left: auto;
+        transform: translateX(0);
+    }
+}
+.text-tail {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: $font-primary;
+  color: $color-green;
+}
+.text-tail-orange {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: $font-primary;
+  color: $color-orange;
+}
+.underline-orange {
+  text-decoration: underline;
+  text-decoration-color: $color-orange;
+}
+.a-green {
+  font-family: $font-primary;
+  color: $color-green;
+  font-weight: 600;
+  z-index: 10;
+  cursor: pointer;
+}
+.arrow {
+    font-family: $font-primary;
+  color: $color-green;
+  font-weight: 800;
+  font-size: 3rem;
+  text-decoration: none;
+  position: absolute;
+  top: -15%;
+  right: 2%;
+  z-index: 10;
+  cursor: pointer;
+  &:hover {
+     color: $color-orange;
+  }
+}
+.logout {
+    font-family: $font-primary;
+  color: $color-green;
+  font-weight: 800;
+  font-size: 2rem;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent !important;
+  border: 0;
+  position: absolute;
+  top:0;
+  right: 2%;
+  &:hover {
+    color: $color-orange;
+  }
+}
+.text-orange {
+  font-family: $font-primary;
+  color: $color-orange;
+}
+.text-green {
+  font-family: $font-primary;
+  color: $color-green;
+}
+.green-rounded-btn {
+  padding: 0.6rem 3.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+  background-color: $color-green;
+  border: 2px solid white;
+  outline: 3px solid $color-green;
+  outline-offset: 0px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+
+  &:hover, &:focus, &:active {
+    background-color: darken($color-green, 8%);
+    outline-color: darken(white, 8%);
+    border: 2px solid $color-orange;
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+    &:disabled, &.disabled {
+    background-color: darken($color-green, 8%);
+    outline-color: darken(white, 8%);  
+    color: white !important;
+    cursor: not-allowed;
+  }
+}
+.light-rounded-btn {
+  padding: 0.6rem 3.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: $color-text-gray;
+  background-color: $color-background;
+  border: 2px solid $color-orange;
+  outline: 3px solid $color-background;
+  outline-offset: 0px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+
+  &:hover, &:focus, &:active {
+    background-color: darken($color-orange, 8%);
+    outline-color: darken($color-green, 8%);  
+    color: white;
+    border: 2px solid white;
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  &:disabled,
+  &.disabled {
+    background-color: darken($color-orange, 8%) !important;
+    outline-color: darken($color-green, 8%);  
+    color: white !important;
+    cursor: not-allowed;
+  }
+}
+.bg-orange-btn {
+    background-color: $color-orange;
+    border: 1px solid $color-orange;
+    &:hover {
+      cursor: pointer;
+       background-color: $color-orange;
+       border: 1px solid black;
+    }
+}
+.main-col{
+  position: relative;
+  height: 80vh;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  font-family: $font-primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   @media (min-width: 992px)  {
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+   height: 100vh;
+   padding:2% 5%;
+   position: fixed;
+   right: 0;
+    overflow-y: auto;
+   }
+}
+.placeholder-registration {
+  width: 45%;
+  border-radius: 50%;
+  border: 2px dashed black;
+  outline: 3px solid white;
+  outline-offset: 2px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  transform: translateX(-50%); 
+  @media (min-width: 361px) {
+    width: 45%;
+  }
+  @media (min-width: 490px) and (max-width: 525px) {
+    width: 39%;      
+  }
+  @media (min-width: 526px) and (max-width: 991px) {
+    width: 30%;      
+  }
+  @media (min-width: 992px)  {
+    width: 25%; 
+     position: static; 
+    transform: none;
+    margin: 15% auto; 
+    margin-bottom: 2%;
+    display: block      
+  }
+}
+.input-register, .input-register-drop {
+  margin-bottom: 5px;
+  color: $color-text-gray;
+  border: {
+    style: solid;
+    width: 2px;
+    color: $color-text-gray;
+    radius: 20px;
+  }
+    &:focus {
+    border: 3px solid  $color-orange;
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.dropdown-menu-rounded {
+  border-radius: 20px;
+  overflow: hidden;
+  .dropdown-item {
+    &:first-child {
+      border-top-left-radius: 18px;
+      border-top-right-radius: 18px;
+    }
+    &:last-child {
+      border-bottom-left-radius: 18px;
+      border-bottom-right-radius: 18px;
+    }
+  }
+}
+.password-toggle-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: $color-text-gray;
+  z-index: 10;
+  &:hover {
+    color: $color-green;
+  } 
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.centered {
+  display: block;
+  margin: 0 auto;
+}
+.custom-checkbox {
+  .form-check-input {
+    border: 2px solid $color-green;
+    background-color: white;
+    cursor: pointer;
+    &:checked {
+      background-color: $color-green;
+      border-color: $color-green;
+    }
+    &:focus {
+      border-color: $color-green;
+    }
+  }
+}
+ .nav-item {
+  .icon-navT {
+  width: 10%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:hover, &.icon-navT-active  {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(90%) saturate(1000%) hue-rotate(0deg);
+  }
+}
+ &.active span {
+    color:$color-orange !important; 
+  }
+}
+
+.navbar-icon {
+width: 24px;
+  height: 24px;
+  transition: all 0.3s ease;
+  &:hover,  &.navbar-icon-active {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(90%) saturate(1000%) hue-rotate(0deg);
+  }
+}
+.logo-navT {
+  width: 20%;
+}
+.photo-main-profile {
+  border-radius: 50%;
+  border: 2px dashed black;
+  outline: 3px solid white;
+  outline-offset: 2px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+.dott {
+  border-top: 2px dashed black !important;
+}
+.dott-b {
+  border-bottom: 2px dashed black !important;
+}
+.camera-upload {
+  position: absolute;
+  right:22%;
+  bottom:15%;
+    border-radius: 50%;
+  border: 2px solid $color-orange;
+  background-color:white;
+  padding: 2%;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-orange;
+     border: 2px solid $color-green;
+
+  }
+}
+.icon-pin {
+  width: 10%;
+  padding: 2%;
+}
+.trash-icon {
+  position: absolute;
+  bottom: 6%;
+  right: 6%;
+  cursor: pointer;
+}
+.icon-paw {
+position: absolute;
+top: 0;
+right:0%;
+width: 13%;
+ z-index: 10;
+ 
+}
+.icon-paw-active {
+position: absolute;
+top: 0;
+right:0%;
+width: 13%;
+ z-index: 10;
+ filter: brightness(0) saturate(100%) invert(55%) sepia(90%) saturate(1000%) hue-rotate(0deg);
+}
+.trash-profile {
+  margin-left: 5px;
+  cursor: pointer;
+}
+.icon-flag {
+  position: absolute;
+bottom: 2%;
+right:4%;
+width: 7%;
+ z-index: 10;
+ &:hover {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(90%) saturate(1000%) hue-rotate(0deg);
+  cursor :pointer;
+ }
+}
+.badge {
+  color: $color-orange;
+  background-color: transparent !important;
+}
+.text-orange-2 {
+  color: $color-text-gray;
+  &:hover {
+    color: $color-orange;
+  }
+}
+.placeholder-custom {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+  pointer-events: none;
+}

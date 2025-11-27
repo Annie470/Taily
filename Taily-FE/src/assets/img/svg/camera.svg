@@ -1,0 +1,23 @@
+<svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Corpo della fotocamera -->
+  <path d="M9 3L7.5 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5H16.5L15 3H9Z" fill="#D1D5DB"/>
+  
+  <!-- Parte superiore fotocamera -->
+  <path d="M9 3L7.5 5H16.5L15 3H9Z" fill="#9CA3AF"/>
+  
+  <!-- Lente della fotocamera -->
+  <circle cx="12" cy="12" r="4" fill="#6B7280"/>
+  
+  <!-- Cerchio interno lente -->
+  <circle cx="12" cy="12" r="2.5" fill="#9CA3AF"/>
+  
+  <!-- Flash/dettaglio -->
+  <circle cx="17.5" cy="7.5" r="1" fill="#6B7280"/>
+  
+  <!-- Simbolo + -->
+  <g transform="translate(17, 14)">
+    <circle cx="0" cy="0" r="4.5" fill="#D1D5DB"/>
+    <line x1="0" y1="-2.5" x2="0" y2="2.5" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-2.5" y1="0" x2="2.5" y2="0" stroke="#6B7280" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>
