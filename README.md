@@ -1,0 +1,2 @@
+# Taily
+Taily is a personal web application developed with a Java backend (Spring + Hibernate) and a JavaScript frontend (React + Vite). The project demonstrates full-stack capabilities, from server-side architecture to building performant user interfaces.  It is designed to facilitate the organization of dog socialization meetups in public canine parks or private spaces. It will allow users to create compatible canine appointments.
