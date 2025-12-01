@@ -102,12 +102,16 @@ public class PostService {
 
     //DELETE ALL EXPIRED POSTS
     @Transactional
-    public void deleteExpiredPosts() {
+     public void deleteExpiredPosts() {
         LocalDateTime now = LocalDateTime.now();
         List<Post> expiredPosts = postRepository.findByDateBefore(now);
-        expiredPosts.forEach(chatMessageRepository::deleteByPost);
+        expiredPosts.forEach(post -> {
+            chatMessageRepository.deleteByPost(post);
+            reportRepository.deleteByPost(post);
+        });
         postRepository.deleteByDateBefore(now);
     }
+
 
     //POST ADD GUESTS
     public Post addGuest(UUID postId, DogOwner currentUser) {
